@@ -1,0 +1,72 @@
+:root{
+    --active-color: #6eb8ff;
+    --side-menu-bgc: #222327;
+}
+.header{
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: top .5s, box-shadow .5s, background-color 1s;
+    -webkit-transition: top .5s, box-shadow .5s, background-color 1s;
+    -o-transition: top .5s, box-shadow .5s, background-color 1s;
+    -moz-transition: top .5s, box-shadow .5s, background-color 1s;
+    -ms-transition: top .5s, box-shadow .5s, background-color 1s;
+    background-color: rgba(18,18,18,0);
+    background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));
+    -webkit-background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));
+    -moz-background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));  
+    -ms-background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));
+    -o-background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));
+}
+.menu a{
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+}
+.menu a:hover{
+    color: var(--active-color);
+}
+@media only screen and (max-width: 576px){
+    .menu-item-img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .sign-in-img{
+        display: block;
+    }
+    .sign-in{
+        display: none;
+    }
+    .side-menu{
+        background: var(--body-bgc);
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .menu-item-img{
+        display: none;
+    }
+    .sign-in-img{
+        display: none;
+    }
+    .sign-in{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+}
