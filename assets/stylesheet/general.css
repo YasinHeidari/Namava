@@ -11,11 +11,12 @@
 :root{
     --active-color: #6eb8ff;
     --white-color: #ffffff;
+    --light-white-font: #ccc;
     --green-bgc:#99c14d;
     --grey-bgc:#ffffff33;
     --grey-color-font:#aaaaaa;
     --body-bgc:#121212;
-    --side-menu-bgc: #222327;
+    --light-black: #222327;
 }
 body{
     direction:rtl;
@@ -24,7 +25,6 @@ body{
 }
 a{
     text-decoration: none;
-    color: var(--white-color);
     cursor: pointer;
 }
 ul,ol{
@@ -36,6 +36,13 @@ h1,h2,h3,h4,h5,h6,p,a{
     margin: 0;
     padding: 0;
 }
+button{
+    background: transparent;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+
+}
 
 .container{
     width: 93%;
@@ -45,6 +52,11 @@ h1,h2,h3,h4,h5,h6,p,a{
     color: var(--active-color);
     fill: var(--active-color);
 }
+
+.light-black{
+    color: var(--light-black);
+}
+
 
 .position-relative{
     position: relative;
@@ -115,6 +127,22 @@ h1,h2,h3,h4,h5,h6,p,a{
 .left-100{
     left: 100%;
 }
+.z-n1{
+    z-index: -1;
+}
+.z-0{
+    z-index: 0;
+}
+.z-1{
+    z-index: 1;
+}
+.z-2{
+    z-index: 2;
+}
+z-3{
+    z-index: 3;
+}
+
 
 .d-inline-block{
     display: inline-block;
@@ -154,7 +182,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 .justify-start{
     justify-content: start;
-    -webkit-justify-content:start;
+    -webkit-justify-content: start;
     -moz-justify-content:start;
     -o-kit-justify-content:start;
     -ms-justify-content:start;
@@ -167,7 +195,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     -ms-justify-content:space-evenly;
 }
 .justify-around{
-    justify-content: around;
+    justify-content: space-around;
     -webkit-justify-content:space-around;
     -moz-justify-content:space-around;
     -o-kit-justify-content:space-around;
