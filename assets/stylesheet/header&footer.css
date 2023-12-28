@@ -2,12 +2,23 @@
     --active-color: #6eb8ff;
     --white-color: #ffffff;
     --light-white-font: #ccc;
+    --lighter-white-font:#aaa;
     --green-bgc:#99c14d;
     --grey-bgc:#ffffff33;
     --grey-color-font:#aaaaaa;
     --body-bgc:#121212;
     --light-black: #222327;
+    --footer-download-link-bgc:#37383e;
+    --footer-bgc-black:#1A1A1A;
+    --footer-media-blue:#005fb4;
 }
+
+.dark-cover{
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+}
+/*header*/
 .header{
     height: 80px;
     box-shadow: 0 0 0 rgba(0,0,0,0);
@@ -29,7 +40,7 @@
 .header a{
     color: var(--white-color);
 }
-.menu a{
+.menu a ,.side-menu a{
     color: var(--white-color);
     transition: color .3s ease;
     -webkit-transition: color .3s ease;
@@ -37,16 +48,45 @@
     -moz-transition: color .3s ease;
     -ms-transition: color .3s ease;
 }
-.menu a:hover{
+.menu a:hover , .side-menu a:hover{
     color: var(--active-color);
 }
 
-
-footer{
-    background-color: #222327;
-
+.header .sign-in{
+    border: 1px solid var(--white-color);
+    padding: 0 10px;
+    line-height: 36px;
 }
-.footerLink a{
+.side-menu button{
+    padding: 0;
+}
+.side-menu{
+    width: 250px;
+    height: 100%;
+}
+.side-menu .w100{
+    padding: 0 24px;
+}
+
+
+/*footer*/
+.footer{
+    margin-top:10rem;
+}
+.footer .footerLinksContainer{
+    background: var(--light-black);
+}
+.footer .footerLinks{
+    height: 40px;
+}
+.footerLink{
+    width: 1%;
+    max-width: 200px;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+}
+.footer .footerLink a{
     color: var(--light-white-font);
     transition: color .3s ease;
     -webkit-transition: color .3s ease;
@@ -54,20 +94,130 @@ footer{
     -moz-transition: color .3s ease;
     -ms-transition: color .3s ease;
 }
-.footerLink a:hover{
+.footer .footerLink a:hover{
     color: var(--white-color);
 }
-.footerLink .footerAroowDown{
-    transform: rotate(180deg);
-
+.footer .footerOtherLinksOpen span ,.footer .footerOtherLinksClose span {
+    color: var(--light-white-font);
+    cursor: pointer;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
 }
-.footerOtherLinks{
+.footer .footerOtherLinksOpen:hover span , .footer .footerOtherLinksClose:hover span{
+    color: var(--white-color);
+}
+.footer .footerOtherLinksOpen img,.footer .footerOtherLinksClose img{
+    margin-right: 9px;
+}
+.footer .footerOtherLinks{
     display: none;
 }
+.footer .footerLink .footerArrowDown{
+    transform: rotate(180deg);
+}
+.footer .footerInfo .footerDownload{
+    background: transparent;
+    padding: 15px 24px;
+}
+.footer .footerInfo .footerDownload .footerLogo .blueLogo{
+    padding: 22px 12px;
+    background: linear-gradient(to bottom, rgba(25,147,255,1), rgba(0,95,180,1));
+    text-align: center;
+}
+.footer .footerInfo .footerDownload .footerLogo p{
+    color: var(--white-color);
+}
+.footer .footerInfo .footerDownload .footerDownloadLinks .footerDownloadLink{
+    background: var(--footer-download-link-bgc);
+    padding: 4px;
+}
+.footer .footerInfo .footerDownload .footerDownloadLinks .footerDownloadLink .footerDownloadLinkText span{
+    color: var(--light-white-font);
+}
+.footer .footerInfo .footerDownload .footerDownloadLinks .footerDownloadLink .footerDownloadLinkText p{
+    color: var(--white-color);
+}
 
+
+.footer .footerInfo .footerContent .footerContentText p:first-child {
+    color: var(--white-color);
+    font-weight: bolder;
+}
+.footer .footerInfo .footerContent .footerContentText p:last-child{
+    color: var(--lighter-white-font);
+    line-height: 26px;
+    font-weight: normal;
+
+}
+.footer .footerInfo .footerContent .footerContentNamads a{
+    width: 100px;
+    height: 100px;
+    padding:12px;
+    text-align: center;
+    background-color: var(--light-white-font);
+}
+.footer .footerInfo .footerContent .footerContentNamads a img{
+    width: 100%;
+    height: auto;
+}
+
+
+.footer .footerDescription{
+    border-top: 1px solid var(--footer-download-link-bgc);
+    padding: 20px 0;
+}
+.footer .footerDescriptionText{
+    color: var(--grey-color-font);
+}
+.footer .footerDescription .footerDescriptionMedias .footerDescriptionMedia path {
+    transition: fill .3s ease;
+    -webkit-transition: fill .3s ease;
+    -o-transition: fill .3s ease;
+    -moz-transition: fill .3s ease;
+    -ms-transition: fill .3s ease;
+}
+.footer .footerDescription .footerDescriptionMedias .footerDescriptionMedia:hover path {
+    fill:var(--footer-media-blue);
+}
 
 /*media queries*/
 @media only screen and (max-width: 576px){
+    .menu-item-img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .sign-in-img{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+    .sign-in-img img{
+        width: 100%;
+    }
+    .sign-in{
+        display: none;
+    }
+    .side-menu{
+        background: var(--light-black);
+        display: block;
+    }
+    .hamburger-menu{
+        display: block;
+        background: transparent;
+    }
+    .footer .footerInfo .footerDownload{
+        padding: 0;
+    }
+    .footer .footerInfo .footerDownload .footerLogo .blueLogo {
+        padding: 9px 4px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
     .menu-item-img{
         display: block;
         width: 30px;
@@ -81,38 +231,44 @@ footer{
     }
     .side-menu{
         background: var(--light-black);
+        display: block;
     }
     .hamburger-menu{
         display: block;
         background: transparent;
     }
-}
-
-@media only screen and (min-width: 576px) {
-    .menu-item-img{
-        display: none;
+    .footer .footerInfo .footerDownload{
+        padding: 0;
     }
-    .sign-in-img{
-        display: none;
-    }
-    .sign-in{
-        display: block;
-    }
-    .hamburger-menu{
-        display: none;
+    .footer .footerInfo .footerDownload .footerLogo .blueLogo {
+        padding: 9px 4px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
+    .sign-in-img{
+        display: none;
+    }
+    .footer .footerInfo .footerContent .footerContentNamads a {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    .hamburger-menu{
+        display: none;
+    }
+    .side-menu{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-
+    .footer .footerInfo .footerDownload {
+        background: var(--light-black);
+    }
 }
 
 @media only screen and (min-width: 1400px) {
