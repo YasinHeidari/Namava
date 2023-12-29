@@ -139,6 +139,7 @@
 }
 .footer .footerInfo .footerDownload .footerDownloadLinks .footerDownloadLink .footerDownloadLinkText p{
     color: var(--white-color);
+    width: 45px;
 }
 
 
@@ -268,9 +269,6 @@
 @media only screen and (min-width: 1200px) {
     .footer .footerInfo .footerDownload {
         background: var(--light-black);
+        padding: 15px 24px;
     }
-}
-
-@media only screen and (min-width: 1400px) {
-
 }
