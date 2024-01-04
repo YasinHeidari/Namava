@@ -57,7 +57,9 @@ button{
     color: var(--active-color);
     fill: var(--active-color);
 }
-
+.greenBgc{
+    background-color: var(--green-bgc);
+}
 .light-black{
     color: var(--light-black);
 }

@@ -70,9 +70,6 @@
 
 
 /*footer*/
-.footer{
-    margin-top:10rem;
-}
 .footer .footerLinksContainer{
     background: var(--light-black);
 }
