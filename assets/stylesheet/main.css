@@ -18,8 +18,7 @@
 /*heroSection start*/
 
 .heroSection{
-
-    height: 100vh;
+    height: 90vh;
 }
 .heroSection .heroSectionSlides{
     height: 100%;
@@ -33,26 +32,53 @@
 }
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideTitleLink{
 
+    height: fit-content;
 }
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideTitleLink .heroSectionSlideImgTitle{
+    width: 290px;
+    height: auto;
+}
+.heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentTitle h2{
 
 }
-.heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentTitle{
+.heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentTitle p{
 
+    padding: 7px;
 }
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentText{
 
 }
-.heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentText a img{
-
+.heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentText a:first-child img{
+    width: 20px;
+    height: 20px;
 }
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideContentText .heroSectionSlideAudioSounds{
 
 }
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideVideo{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.heroSection .heroSectionSlides .heroSectionSlide .heroSectionPardisImg img{
+    width: 300px;
+    height: auto;
+}
+.heroSection .heroSectionSlides .heroSectionSlideNavigationBtns {
+    bottom: 20%;
+}
+.heroSection .heroSectionSlides .heroSectionSlideNavigationBtns button{
+    background: transparent;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+.heroSection .heroSectionSlides .heroSectionSlideNavigationBtns button svg{
+    width: 40px;
+    height: 40px;
+}
+.heroSection .heroSectionSlides .heroSectionSlideNavigationBtns .heroSectionSlideNavigationBtnLeft{
+    transform: rotate(180deg);
 }
 @media only screen and (max-width: 576px){
 }
