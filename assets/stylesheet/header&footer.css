@@ -86,7 +86,9 @@
 .sideMenu .w-100{
     padding: 0 24px;
 }
-
+.sideMenu .menuItemImg:hover{
+    fill: var(--active-color);
+}
 
 /*footer*/
 .footer .footerLinksContainer{
@@ -205,7 +207,7 @@
     }
     .sideMenu{
         background: var(--light-black);
-        right: -50%;
+        right: -150%;
     }
     .hamburgerMenu{
         background: transparent;
@@ -231,7 +233,7 @@
     }
     .sideMenu{
         background: var(--light-black);
-        right: -50%;
+        right: -150%;
     }
     .hamburgerMenu{
         display: block;

@@ -23,7 +23,7 @@
                         <a href="./main.html">
                             <img src="./assets/images/namava-logo-white.svg" />
                         </a>
-                        <button class="hamburgerMenu d-xs-block sideMenuOpen">
+                        <button class="hamburgerMenu d-xs-block sideMenuOpen" onclick="sideMenuCollapse()">
                             <img src="./assets/images/hamburger-menu.svg" />
                         </button>
                     <div class="menu d-lg-flex justify-evenly align-center gap-2 d-xs-none d-sm-none">
@@ -72,25 +72,25 @@
             <a href="./main.html">
                 <img src="./assets/images/namava-logo-white.svg" />
             </a>
-            <button class="hamburgerMenu d-xs-block sideMenuClose">
+            <button class="hamburgerMenu d-xs-block sideMenuClose" onclick="sideMenuCollapse()">
                 <img src="./assets/images/hamburger-menu.svg" />
             </button>
         </div>
         <a href="./main.html"  class="d-flex flex-row-reverse justify-start gap-2 align-center w-100">
             <p class="font-12 active">خانه</p>
-            <img class="menuItemImg d-lg-none d-sm-block d-xs-block active" src="./assets/images/home-menu.svg"/>
+            <svg class="menuItemImg d-lg-none d-sm-block d-xs-block active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"><path class="svg-c1" d="M14.73 16.013c1.226 0 2.223.997 2.223 2.223v4.922h-4.446v-4.922c0-1.226.997-2.223 2.223-2.223zm11.575-1.156l-8.641-8.641A4.12 4.12 0 0 0 14.73 5a4.12 4.12 0 0 0-2.934 1.215l-8.642 8.641c-.1.1-.155.232-.155.373s.055.274.155.373a.53.53 0 0 0 .747 0l1.979-1.979v8.153a2.44 2.44 0 0 0 2.436 2.436h12.826a2.44 2.44 0 0 0 2.436-2.436v-8.153l1.979 1.979a.54.54 0 0 0 .747 0c.1-.1.155-.232.155-.373s-.055-.274-.155-.373z" fill="#fff"></path></svg>
         </a>
         <a href="#" class="d-flex flex-row-reverse justify-start gap-2 align-center w-100">
             <p class="font-12">فیلم ها</p>
-            <img class="menuItemImg d-lg-none d-sm-block d-xs-block" src="./assets/images/camera-menu.svg"/>
+            <svg class="menuItemImg d-lg-none d-sm-block d-xs-block" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"><g clip-path="url(#A)" fill="#fff"><path class="svg-c1" d="M16.032 11.86a3.43 3.43 0 0 0 0-6.86 3.43 3.43 0 0 0 0 6.86zm-7.402 0a3.43 3.43 0 0 0 0-6.86 3.43 3.43 0 0 0 0 6.86z"></path><g fill-rule="evenodd"><path d="M18.3 24.45H6c-1.66 0-3-1.34-3-3v-5.47c0-1.66 1.34-3 3-3h12.3c1.66 0 3 1.34 3 3v5.47a3.01 3.01 0 0 1-3 3z"></path><path d="M19.678 19.58l4.97 2.87c.67.38 1.5-.1 1.5-.87v-5.74c0-.77-.83-1.25-1.5-.87l-4.97 2.87c-.67.39-.67 1.36 0 1.74z"></path></g></g><defs><clipPath id="A"><path fill="#fff" transform="translate(3 5)" d="M0 0h23.15v19.45H0z"></path></clipPath></defs></svg>
         </a>
         <a href="#" class="d-flex flex-row-reverse justify-start gap-2 align-center w-100">
             <p class="font-12">سریال ها</p>
-            <img class="menuItemImg d-lg-none d-sm-block d-xs-block" src="./assets/images/serial-menu.svg"/>
+            <svg class="menuItemImg d-lg-none d-sm-block d-xs-block" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"><g><path class="svg-c1" fill-rule="evenodd" d="M24.19 9H5c-1.66 0-3 1.35-3 3v9.79c0 1.65 1.34 3 3 3h19.19c1.66 0 3-1.35 3-3V12c0-1.65-1.34-3-3-3zm-7.08 8.67l-2.87 1.66c-.67.38-1.5-.1-1.5-.87v-3.31c0-.77.83-1.25 1.5-.87l2.87 1.66a1 1 0 0 1 0 1.73z" fill="#fff"></path></g><path d="M6 8a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1H6zm2-2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H8z" fill="#fff"></path><defs><clipPath id="A"><path fill="#fff" transform="translate(2 9)" d="M0 0h25.19v18.07H0z"></path></clipPath></defs></svg>
         </a>
         <a href="#" class="d-flex flex-row-reverse justify-start gap-2 align-center w-100">
             <p class="font-12">دسته بندی </p>
-            <img class="menuItemImg d-lg-none d-sm-block d-xs-block" src="./assets/images/layout-menu.svg"/>
+            <svg class="menuItemImg d-lg-none d-sm-block d-xs-block" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"><path class="svg-c1" d="M17.931 6h4.432a1.96 1.96 0 0 1 1.957 1.957v4.432a1.96 1.96 0 0 1-1.957 1.957h-4.432a1.96 1.96 0 0 1-1.957-1.957V7.957A1.96 1.96 0 0 1 17.931 6zM7.957 6h4.432a1.96 1.96 0 0 1 1.957 1.957v4.432a1.96 1.96 0 0 1-1.957 1.957H7.957A1.96 1.96 0 0 1 6 12.389V7.957A1.96 1.96 0 0 1 7.957 6zm9.974 9.985h4.432a1.96 1.96 0 0 1 1.957 1.957v4.432a1.96 1.96 0 0 1-1.957 1.957h-4.432a1.96 1.96 0 0 1-1.957-1.957v-4.432a1.96 1.96 0 0 1 1.957-1.957zm-9.974 0h4.432a1.96 1.96 0 0 1 1.957 1.957v4.432a1.96 1.96 0 0 1-1.957 1.957H7.957A1.96 1.96 0 0 1 6 22.374v-4.432a1.96 1.96 0 0 1 1.957-1.957z"></path></svg>
         </a>
         <a href="#" class="d-flex flex-row-reverse justify-start gap-2 align-center w-100">
             <p class="font-12">تازه ها</p>
@@ -120,22 +120,22 @@
                     <source type="video/mp4" src="https://static.namava.ir/Content/Upload/Images/9cc37088-cdc1-4b5d-b546-113b385cd7be.mp4">
                 </video>
                 <div class="container ">
-                    <div class="heroSectionSlideInfo d-flex flex-column align-start  justify-sm-center h-100 h-lg-auto gap-xl-3 gap-lg-2 gap-md-1  position-absolute top-lg-25 ">
+                    <div class="heroSectionSlideInfo d-flex flex-column align-sm-start align-xs-center  justify-sm-center justify-xs-end h-100 h-lg-auto gap-xl-3 gap-lg-2 gap-md-1  position-absolute top-lg-25 ">
                         <a class="heroSectionSlideTitleLink d-lg-block d-sm-none d-xs-none"  target="">
                             <img class="heroSectionSlideImgTitle " src="https://static.namava.ir/Content/Upload/Images/e6af8c86-0bdc-4e78-a0de-5faf27e1ca14.png" alt="آبجی" title="آبجی">
                         </a>
                         <div class="heroSectionSlideContentTitle d-flex justify-evenly gap-2 align-center">
-                            <a class="font-20 white-color">آبجی</a>
-                            <p class="green-bgc border-radius-6 blackColor p-7 font-xl-20 font-md-12">در حال اکران</p>
+                            <a class="font-sm-20 font-xs-12 white-color">آبجی</a>
+                            <p class="green-bgc border-radius-6 blackColor p-7 font-xl-20 font-sm-12 font-xs-12">در حال اکران</p>
                         </div>
                         <div class="heroSectionSlideContentText d-flex justify-evenly align-center gap-2">
                             <a href="#" class="d-flex justify-evenly align-center flex-row-reverse gap-1 white-bgc border-radius-6 black-color p-7">
-                                    <span class="font-xl-20 font-md-12">خرید بلیت</span>
+                                    <span class="font-xl-20 font-sm-12 font-xs-12">خرید بلیت</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20px" height="20px">
                                     <path d="M14.66 8.347l-8.537-4.93c-.502-.287-1.12-.286-1.62.005s-.81.825-.81 1.404v9.858c-.001.58.307 1.115.808 1.406s1.12.293 1.62.005l8.537-4.93a1.64 1.64 0 0 0 0-2.82z"></path>
                                 </svg>
                             </a>
-                            <a href="#" class="d-inline-block dark-bgc border-radius-6 white-color p-7 font-xl-20 font-md-12 font-weight-normal">پیش نمایش</a>
+                            <a href="#" class="d-inline-block dark-bgc border-radius-6 white-color p-7 font-xl-20 font-sm-12 font-xs-12 font-weight-normal">پیش نمایش</a>
                             <div class="heroSectionSlideAudioSounds">
                                     <img class="soundBtn" src="./assets/images/soundOffHeroSection.svg" onclick="muteVideo()"/>
                             </div>
@@ -163,6 +163,17 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--hero section end-->
+
+    <!--body Slider start-->
+    <div class="body">
+        <div class="container">
+            <div class="movieSliderMenu d-flex flex-column justify-evenly gap-1 align-center">
+
             </div>
         </div>
     </div>
