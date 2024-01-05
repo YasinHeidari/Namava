@@ -21,6 +21,8 @@
     --footer-download-link-bgc:#37383e;
     --footer-bgc-black:#1A1A1A;
     --footer-media-blue:#005fb4;
+    --heroSection-active-color:#1993ff;
+    --heroSection-dark-bgc:rgba(255, 255, 255, 0.2);
 }
 body{
     direction:rtl;
@@ -45,7 +47,8 @@ button{
     color: var(--white-color);
     border: none;
     outline: none;
-
+    cursor: pointer;
+    padding: 0;
 }
 
 .container{
@@ -57,26 +60,27 @@ button{
     color: var(--active-color);
     fill: var(--active-color);
 }
-.greenBgc{
+.green-bgc{
     background-color: var(--green-bgc);
 }
-.darkBgc{
-    background-color: var(--lighter-white-font);
+.dark-bgc{
+    background-color: var(--heroSection-dark-bgc);
 }
-.blackColor{
+.black-color{
     color: #000;
 }
-.whiteBgc{
+.white-bgc{
     background-color: var(--white-color);
 }
-.whiteColor{
+.white-color{
     color: var(--white-color);
 }
 .light-black{
     color: var(--light-black);
 }
-
-
+.object-cover{
+    object-fit: cover;
+}
 .p-7{
     padding: 7px;
 }
@@ -89,19 +93,31 @@ button{
 .border-radius-8{
     border-radius: 8px;
 }
-.w100{
+.w-100{
     width:100%;
 }
-.textCenter{
+.max-w-100{
+    max-width:100%;
+}
+.min-h-100{
+    min-height: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.h-auto{
+    height: auto;
+}
+.text-center{
     text-align: center;
 }
-.textLeft{
+.text-left{
     text-align: left;
 }
-.textRight{
+.text-right{
     text-align: right;
 }
-.verticalMiddle{
+.vertical-middle{
     vertical-align: middle;
 }
 
@@ -195,6 +211,9 @@ button{
 }
 .d-inline-block{
     display: inline-block;
+}
+.d-block{
+    display: block;
 }
 .d-flex{
     display: flex;
@@ -317,7 +336,7 @@ button{
 .gap-13{
     gap: 256px;
 }
-.fontWNormal{
+.font-weight-normal{
     font-weight: normal !important;
 }
 .font-8{
@@ -342,6 +361,7 @@ button{
 }
 .font-20{
     font-size: 20px;
+    font-weight: bold;
 }
 
 /*! default columns */
@@ -440,12 +460,19 @@ button{
         font-size: 16px;
         font-weight: bold;
     }
-    .containerSmall{
+    .font-xs-20{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container-small{
         width: 95%;
         margin: 0 auto;
     }
     .d-xs-none{
         display: none;
+    }
+    .d-xs-block{
+        display: block;
     }
     .flex-xs-row{
         flex-flow: row;
@@ -619,12 +646,19 @@ button{
         font-size: 16px;
         font-weight: bold;
     }
-    .containerSmall{
+    .font-sm-20{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container-small{
         width: 95%;
         margin: 0 auto;
     }
     .d-sm-none{
         display: none;
+    }
+    .d-sm-block{
+        display: block;
     }
     .flex-sm-row{
         flex-flow: row;
@@ -779,7 +813,9 @@ button{
     .col-md-12{
         width: 100%;
     }
-
+    .d-md-block{
+        display: block;
+    }
     .font-md-8{
         font-size: 8px;
         font-weight: normal;
@@ -798,6 +834,10 @@ button{
     }
     .font-md-16{
         font-size: 16px;
+        font-weight: bold;
+    }
+    .font-md-20{
+        font-size: 20px;
         font-weight: bold;
     }
     .d-md-inline-block{
@@ -974,6 +1014,32 @@ button{
     .font-lg-16{
         font-size: 16px;
         font-weight: bold;
+    }
+    .font-lg-20{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .h-lg-auto{
+        height: auto;
+    }
+    .top-lg-0{
+        top: 0;
+    }
+    .top-lg-25{
+        top: 25%;
+    }
+    .top-lg-50{
+        top: 50%;
+    }
+    .top-lg-75{
+        top: 75%;
+    }
+    .top-lg-100{
+        top: 100%;
+    }
+
+    .d-lg-block{
+        display: block;
     }
     .d-lg-flex{
         display: flex;
@@ -1154,6 +1220,13 @@ button{
         font-size: 16px;
         font-weight: bold;
     }
+    .font-xl-20{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .d-xl-block{
+        display: block;
+    }
     .d-xl-flex{
         display: flex;
     }
@@ -1329,8 +1402,15 @@ button{
         font-size: 16px;
         font-weight: bold;
     }
-    .containerSmall{
+    .font-xxl-20{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container-small{
         width: 70%;
+    }
+    .d-xxl-block{
+        display: block;
     }
     .flex-xxl-row{
         flex-flow: row;

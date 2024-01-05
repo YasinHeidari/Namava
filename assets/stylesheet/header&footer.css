@@ -1,5 +1,6 @@
 :root{
     --active-color: #6eb8ff;
+    --black-color:#000;
     --white-color: #ffffff;
     --light-white-font: #ccc;
     --lighter-white-font:#aaa;
@@ -40,7 +41,7 @@
 .header a{
     color: var(--white-color);
 }
-.menu a ,.side-menu a{
+.menu a ,.sideMenu a{
     color: var(--white-color);
     transition: color .3s ease;
     -webkit-transition: color .3s ease;
@@ -48,23 +49,41 @@
     -moz-transition: color .3s ease;
     -ms-transition: color .3s ease;
 }
-.menu a:hover , .side-menu a:hover{
+.header .menuSubscription{
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+}
+.menu a:hover , .sideMenu a:hover ,.header .menuSubscription:hover{
     color: var(--active-color);
 }
 
-.header .sign-in{
+.header .signIn{
     border: 1px solid var(--white-color);
     padding: 0 10px;
     line-height: 36px;
 }
-.side-menu button{
+.header .signIn:hover{
+    border: 1px solid var(--black-color);
+    background-color: #fff;
+    color: var(--black-color);
+
+}
+.sideMenu button{
     padding: 0;
 }
-.side-menu{
+.sideMenu{
     width: 250px;
     height: 100%;
+    transition: fill .6s ease;
+    -webkit-transition: fill .6s ease;
+    -o-transition: fill .6s ease;
+    -moz-transition: fill .6s ease;
+    -ms-transition: fill .6s ease;
 }
-.side-menu .w100{
+.sideMenu .w-100{
     padding: 0 24px;
 }
 
@@ -80,7 +99,6 @@
     width: 1%;
     max-width: 200px;
     flex-grow: 1;
-    text-align: center;
     line-height: 40px;
 }
 .footer .footerLink a{
@@ -122,7 +140,6 @@
 .footer .footerInfo .footerDownload .footerLogo .blueLogo{
     padding: 22px 12px;
     background: linear-gradient(to bottom, rgba(25,147,255,1), rgba(0,95,180,1));
-    text-align: center;
 }
 .footer .footerInfo .footerDownload .footerLogo p{
     color: var(--white-color);
@@ -154,14 +171,8 @@
     width: 100px;
     height: 100px;
     padding:12px;
-    text-align: center;
     background-color: var(--light-white-font);
 }
-.footer .footerInfo .footerContent .footerContentNamads a img{
-    width: 100%;
-    height: auto;
-}
-
 
 .footer .footerDescription{
     border-top: 1px solid var(--footer-download-link-bgc);
@@ -183,28 +194,20 @@
 
 /*media queries*/
 @media only screen and (max-width: 576px){
-    .menu-item-img{
-        display: block;
+    .menuItemImg{
         width: 30px;
         height: 30px;
     }
-    .sign-in-img{
+    .signInImg{
         display: inline-block;
         width: 30px;
         height: 30px;
     }
-    .sign-in-img img{
-        width: 100%;
-    }
-    .sign-in{
-        display: none;
-    }
-    .side-menu{
+    .sideMenu{
         background: var(--light-black);
-        display: block;
+        right: -50%;
     }
-    .hamburger-menu{
-        display: block;
+    .hamburgerMenu{
         background: transparent;
     }
     .footer .footerInfo .footerDownload{
@@ -216,22 +219,21 @@
 }
 
 @media only screen and (min-width: 576px) {
-    .menu-item-img{
-        display: block;
+    .menuItemImg{
         width: 30px;
         height: 30px;
     }
-    .sign-in-img{
+    .signInImg{
         display: inline-block;
     }
-    .sign-in{
+    .signIn{
         display: none;
     }
-    .side-menu{
+    .sideMenu{
         background: var(--light-black);
-        display: block;
+        right: -50%;
     }
-    .hamburger-menu{
+    .hamburgerMenu{
         display: block;
         background: transparent;
     }
@@ -244,7 +246,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .sign-in-img{
+    .signInImg{
         display: none;
     }
     .footer .footerInfo .footerContent .footerContentNamads a {
@@ -255,10 +257,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .hamburger-menu{
+    .hamburgerMenu{
         display: none;
     }
-    .side-menu{
+    .sideMenu{
         display: none;
     }
 }
