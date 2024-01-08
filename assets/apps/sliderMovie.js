@@ -211,7 +211,7 @@
     let menuItem = document.createElement("div");
     menuItem.classList.add("movieSliderItem");
     menuItem.classList.add("col-2");
-    menuItem.innerHTML = `<a href="#"><img src=${movie.poster}/> <h3>${movie.title}</h3></a>`;
+    menuItem.innerHTML = `<a href="#"><img src=${movie.poster} /> <h3>${movie.title}</h3></a>`;
     menu.appendChild(menuItem);
 });
     container.appendChild(menu);
