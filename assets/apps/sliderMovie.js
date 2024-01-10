@@ -53,7 +53,7 @@
          "imdb_rating": "8.9",
          "genres": ["Biography", "Drama", "History"],
          "images": ["https:\/\/moviesapi.ir\/images\/tt0108052_screenshot1.jpg", "https:\/\/moviesapi.ir\/images\/tt0108052_screenshot2.jpg", "https:\/\/moviesapi.ir\/images\/tt0108052_screenshot3.jpg"]
-     }, {
+     },/* {
          "id": 7,
          "title": "Pulp Fiction",
          "poster": "https:\/\/moviesapi.ir\/images\/tt0110912_poster.jpg",
@@ -89,7 +89,7 @@
          "imdb_rating": "8.8",
          "genres": ["Drama"],
          "images": ["https:\/\/moviesapi.ir\/images\/tt0137523_screenshot1.jpg", "https:\/\/moviesapi.ir\/images\/tt0137523_screenshot2.jpg", "https:\/\/moviesapi.ir\/images\/tt0137523_screenshot3.jpg"]
-     }],
+     }*/],
      "metadata": {
          "current_page": "1",
          "per_page": 10,
@@ -152,7 +152,7 @@
     "imdb_rating": "8.9",
     "genres": ["Biography", "Drama", "History"],
     "images": ["https:\/\/moviesapi.ir\/images\/tt0108052_screenshot1.jpg", "https:\/\/moviesapi.ir\/images\/tt0108052_screenshot2.jpg", "https:\/\/moviesapi.ir\/images\/tt0108052_screenshot3.jpg"]
-}, {
+},/* {
     "id": 7,
     "title": "Pulp Fiction",
     "poster": "https:\/\/moviesapi.ir\/images\/tt0110912_poster.jpg",
@@ -188,7 +188,7 @@
     "imdb_rating": "8.8",
     "genres": ["Drama"],
     "images": ["https:\/\/moviesapi.ir\/images\/tt0137523_screenshot1.jpg", "https:\/\/moviesapi.ir\/images\/tt0137523_screenshot2.jpg", "https:\/\/moviesapi.ir\/images\/tt0137523_screenshot3.jpg"]
-}],
+}*/],
     "metadata": {
     "current_page": "1",
     "per_page": 10,
@@ -199,23 +199,41 @@
 
     function contentList(data, containerTitle ){
     let container = document.querySelector(".movieSliderMenu");
+    let menuContainer = document.createElement("div");
     let menu = document.createElement("div");
     let contentTitle = document.createElement("h3");
+    container.classList.add("d-flex");
+    container.classList.add("flex-column");
+    container.classList.add("align-start");
+    container.classList.add("justify-evenly");
+    container.classList.add("gap-4");
     contentTitle.innerHTML = containerTitle;
+    contentTitle.classList.add("white-color");
+    menuContainer.appendChild(menu);
+    menuContainer.classList.add("d-flex");
+    menuContainer.classList.add("flex-column-reverse");
+    menuContainer.classList.add("justify-evenly");
+    menuContainer.classList.add("gap-4");
+
     menu.classList.add("movieSliderItems");
     menu.classList.add("col-12");
     menu.classList.add("d-flex");
     menu.classList.add("flex-row");
+    menu.classList.add("justify-evenly");
+    menu.classList.add("align-center");
+    menu.classList.add("gap-4");
 
     data.forEach(function (movie){
     let menuItem = document.createElement("div");
     menuItem.classList.add("movieSliderItem");
     menuItem.classList.add("col-2");
-    menuItem.innerHTML = `<a href="#"><img src=${movie.poster} /> <h3>${movie.title}</h3></a>`;
+    menuItem.classList.add("white-color");
+    menuItem.innerHTML = `<a href="#"><img src=${movie.poster} /> <h4>${movie.title}</h4></a>`;
     menu.appendChild(menuItem);
 });
-    container.appendChild(menu);
-    menu.appendChild(contentTitle);
+    container.appendChild(menuContainer);
+    menuContainer.appendChild(contentTitle);
+
 }
     contentList(movies1.data, "ویژه");
     contentList(movies2.data, "هلو");
