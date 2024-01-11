@@ -18,6 +18,9 @@
     box-shadow: rgb(18, 18, 18) 0 -5px 5px inset;
 }
 /*heroSection start*/
+.heroSection{
+    padding-bottom: 2rem;
+}
 
 .heroSection .heroSectionSlides .heroSectionSlide .heroSectionSlideInfo .heroSectionSlideTitleLink{
     height: fit-content;
@@ -52,9 +55,11 @@
 /*hero section end */
 
 /*main sliders start*/
-.movieSliderItem img{
-    width: 100%;
-    height: auto;
+.body{
+    margin: -4rem 0 100px 0;
+}
+.directorContainer .directorImage{
+    max-width: 190px;
 }
 @media only screen and (max-width: 576px){
     .heroSection{

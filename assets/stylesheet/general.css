@@ -93,6 +93,9 @@ button{
 .border-radius-8{
     border-radius: 8px;
 }
+.border-radius-50{
+    border-radius: 50%;
+}
 .w-100{
     width:100%;
 }
