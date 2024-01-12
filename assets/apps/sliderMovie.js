@@ -100,39 +100,28 @@ let movies1= {
 let movies2 = {
     "movieData" :[{
         "id" : "1",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-                    ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     },{
         "id" : "2",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     },{
         "id" : "3",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     },{
         "id" : "4",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     },{
         "id" : "5",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     },{
         "id" : "6",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
-    },{
-        "id" : "7",
-        "images" : ["https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400" ,"https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=200&amp;h=400 1x","https://static.namava.ir/Content/Upload/Images/76e25b90-d759-4247-98ca-794e435e4cee.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=400&amp;h=800 2x"
-        ],
-        "title" : "داوینجیز"
+        "image" : ["https://static.namava.ir/Content/Upload/Images/f16cef4a-e8a7-4b2e-81c3-b210a93716ee.jpg?anchor=middlecenter&crop=auto&scale=both&w=200&h=400"],
+        "title" : "شریک جرم"
     }]
 }
 let events = {
@@ -141,18 +130,18 @@ let events = {
         "id" : "1",
         "images": [
             "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300",
-            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x,https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
+            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x","https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
         ]}, {
         "id" : "2",
         "images": [
             "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300",
-            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x,https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
+            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x","https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
         ]
         }, {
         "id" : "3",
         "images": [
             "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300",
-            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x,https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
+            "https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=750&amp;h=300 1x","https://static.namava.ir/Content/Upload/Images/f2565baa-0436-4bb6-a3b6-8ed62ff8b429.jpg?anchor=middlecenter&amp;crop=auto&amp;scale=both&amp;w=1500&amp;h=600 2x"
         ]
         }, /*{
         "id" : "4",
@@ -313,7 +302,7 @@ function movieList(data, containerTitle) {
     data.forEach(function (movie) {
         let menuItem = document.createElement("div");
         menuItem.classList.add("movieSliderItem", "col-2", "white-color");
-        menuItem.innerHTML = `<a href="#" class="d-flex flex-column gap-2"><img class="w-100 h-auto"  src=${movie.poster} /> <h5 class="white-color">${movie.title}</h5></a>`;
+        menuItem.innerHTML = `<a href="#" class="d-flex flex-column gap-2"><img class="w-100 h-auto border-radius-5 object-cover" src=${movie.poster} /> <h5 class="white-color">${movie.title}</h5></a>`;
         menu.appendChild(menuItem);
     });
     menuContainer.appendChild(contentTitle);
@@ -327,15 +316,15 @@ function movieSpecial(movieData, containerTitle) {
     let menu = document.createElement("div");
     let contentTitle = document.createElement("h3");
     contentTitle.innerHTML = containerTitle;
-    contentTitle.classList.add("white-color");
+    contentTitle.classList.add("white-color","position-relative");
     menuContainer.appendChild(menu);
     menuContainer.classList.add("d-flex", "flex-column-reverse", "justify-evenly", "gap-4");
-    menu.classList.add("movieSliderItems", "col-12", "d-flex", "flex-row", "justify-evenly", "align-center", "gap-4");
+    menu.classList.add("movieSliderSpecialItems", "col-12", "d-flex", "flex-row", "justify-evenly", "align-center", "gap-4");
 
-    data.forEach(function (movie) {
+    movieData.forEach(function (movie) {
         let menuItem = document.createElement("div");
-        menuItem.classList.add("movieSliderItem", "col-2", "white-color");
-        menuItem.innerHTML = `<a href="#" class="d-flex flex-column gap-2"><img class="w-100 h-auto"  src=${movie.poster} /> <h5 class="white-color">${movie.title}</h5></a>`;
+        menuItem.classList.add("movieSliderSpecialItem", "col-2", "white-color");
+        menuItem.innerHTML = `<a href="#" class="d-flex flex-column gap-2 position-relative"><div class="darkMovieCover position-absolute z-1 top-0 right-0 w-100  d-flex flex-column justify-end align-start"> <p class="white-color font-12">فیلم-۱۴۰۲</p> <span class="d-flex flex-row justify-evenly align-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20" fill="#fff"><path class="svg-c1" d="M13.548 3a4.55 4.55 0 0 0-3.486 1.642C9.2 3.605 7.925 3.003 6.577 3A4.58 4.58 0 0 0 2 7.577c0 6.2 4.852 10.388 8.062 10.388s8.063-4.184 8.063-10.388A4.58 4.58 0 0 0 13.548 3z"></path></svg> <p class="white-color font-12">۸۸٪</p></span> </div> <img class="w-100 h-auto border-radius-5 object-cover"  src=${movie.image} /> <h5 class="white-color">${movie.title}</h5></a>`;
         menu.appendChild(menuItem);
     });
     menuContainer.appendChild(contentTitle);
@@ -344,6 +333,7 @@ function movieSpecial(movieData, containerTitle) {
 }
 eventSlider(events.eventData);
 movieList(movies1.data, "ویژه");
+movieSpecial(movies2.movieData, "اختصاصی نماوا")
 movieList(movies1.data, "رایگان در نماوا");
 movieList(movies1.data, "تازه های نماوا");
 movieList(movies1.data, "سریال های ایرانی");
